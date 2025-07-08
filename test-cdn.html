@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Lit CDN</title>
+    <script type="module">
+        import { LitElement, html } from 'https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js';
+        
+        class TestComponent extends LitElement {
+            render() {
+                return html`
+                    <div style="padding: 20px; text-align: center;">
+                        <h1>🚀 Lit funcionando via CDN!</h1>
+                        <p>Se você vê isso, o Lit está funcionando corretamente.</p>
+                        <button @click=${() => alert('Funcionou!')}>
+                            Clique aqui
+                        </button>
+                    </div>
+                `;
+            }
+        }
+        
+        customElements.define('test-component', TestComponent);
+    </script>
+</head>
+<body>
+    <test-component></test-component>
+</body>
+</html> 

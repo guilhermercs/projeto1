@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Lit</title>
+</head>
+<body>
+    <h1>Teste básico</h1>
+    <p>Se você vê isso, o HTML está funcionando.</p>
+    
+    <script type="module">
+        console.log('Script iniciado');
+        
+        import { LitElement, html } from 'lit';
+        console.log('Lit importado com sucesso');
+        
+        class DebugComponent extends LitElement {
+            render() {
+                console.log('Renderizando componente');
+                return html`<h2>Componente Lit funcionando!</h2>`;
+            }
+        }
+        
+        customElements.define('debug-component', DebugComponent);
+        console.log('Componente registrado');
+    </script>
+    
+    <debug-component></debug-component>
+</body>
+</html> 

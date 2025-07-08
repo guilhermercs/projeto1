@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Lit</title>
+    <script type="module">
+        import { LitElement, html } from 'lit';
+        
+        class TestComponent extends LitElement {
+            render() {
+                return html`<h1>Teste funcionando!</h1>`;
+            }
+        }
+        
+        customElements.define('test-component', TestComponent);
+    </script>
+</head>
+<body>
+    <test-component></test-component>
+</body>
+</html> 
