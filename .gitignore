@@ -1,0 +1,57 @@
+# Dependências
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Arquivos temporários do sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Arquivos de IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos de build/dist
+dist/
+build/
+out/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos de lock (opcional - alguns preferem versionar)
+# package-lock.json
+# yarn.lock
+
+# Arquivos temporários
+tmp/
+temp/ 
